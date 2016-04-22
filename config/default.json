@@ -1,0 +1,26 @@
+{
+    "port": 9090,
+
+    "triplestore": {
+        "url": "http://52.19.236.4:8085/openrdf-sesame",
+        "defaultStore": "sbolstack_v1"
+    },
+
+    "prefixes": {
+        "bacillondex": "http://www.bacillondex.org/"
+    },
+
+    "users": [
+        {
+            "name": "admin",
+            "password": "admin",
+            "permissions": [
+                "create", "upload", "retrieve", "sparql"
+            ]
+        }
+    ],
+
+    "anonymousPermissions": [
+        "retrieve", "sparql"
+    ]
+}
