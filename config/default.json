@@ -21,6 +21,6 @@
     ],
 
     "anonymousPermissions": [
-        "retrieve", "sparql"
+        "create", "upload", "retrieve", "sparql"
     ]
 }
