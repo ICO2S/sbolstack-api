@@ -2,7 +2,7 @@
     "port": 9090,
 
     "triplestore": {
-        "url": "http://52.19.236.4:8085/openrdf-sesame",
+        "url": "http://localhost:8080/openrdf-sesame",
         "defaultStore": "sbolstack_v1"
     },
 
