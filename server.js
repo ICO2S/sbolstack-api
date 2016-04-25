@@ -8,6 +8,8 @@ var triplestore = new SesameFrontend(triplestoreUrl)
 
 var storeName = config.get('triplestore').defaultStore
 
+var createStore = require('./lib/createStore')
+
 triplestore.getRepositories(function(err, repos) {
 
     if(err) {
@@ -23,9 +25,31 @@ triplestore.getRepositories(function(err, repos) {
 
         console.log('Store matching ID ' + storeName + ' not found')
         console.log('Available stores: ' + repos.map((repo) => repo.id).join(', '))
+        console.log('Attempting to create store...')
 
-        return
+        createStore(storeName, 'SBOLStackDefaultStore', (err, url) => {
+
+            if(err) {
+
+                console.log('Error creating default store')
+
+            } else {
+
+                run()
+
+            }
+
+        })
+
+    } else {
+
+        run()
+
     }
+
+})
+
+function run() {
 
     var App = require('./lib/app');
 
@@ -33,6 +57,6 @@ triplestore.getRepositories(function(err, repos) {
 
     app.listen(config.get('port'));
 
-})
+}
 
 
