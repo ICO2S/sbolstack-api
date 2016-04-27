@@ -23,5 +23,7 @@
 
     "anonymousPermissions": [
         "create", "upload", "retrieve", "sparql"
-    ]
+    ],
+
+    "uploadLimit": "150mb"
 }
