@@ -2,12 +2,13 @@
     "port": 9090,
 
     "triplestore": {
-        "url": "http://localhost:8080/openrdf-sesame",
+        "url": "http://52.19.236.4:8085/openrdf-sesame",
         "defaultStore": "sbolstack_v1"
     },
 
     "prefixes": {
-        "bacillondex": "http://www.bacillondex.org/"
+        "bacillondex": "http://www.bacillondex.org/",
+        "synbiohub": "http://synbiohub.org#"
     },
 
     "users": [
