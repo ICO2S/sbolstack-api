@@ -20,7 +20,7 @@
     "openrdf-sesame-js": "^0.1.0",
     "pg-escape": "^0.1.0",
     "request": "^2.67.0",
-    "sboljs": "^1.1.2",
+    "sboljs": "^1.1.3",
     "sparql-client": "^0.2.0",
     "urijs": "^1.17.0"
   }
