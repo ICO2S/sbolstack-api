@@ -3,12 +3,13 @@
 
     "triplestore": {
         "url": "http://localhost:8080/openrdf-sesame",
-        "defaultStore": "sbolstack_v1"
+        "defaultStore": "lucenetest"
     },
 
     "prefixes": {
         "bacillondex": "http://www.bacillondex.org/",
-        "synbiohub": "http://synbiohub.org#"
+        "synbiohub": "http://synbiohub.org#",
+        "ecolikb": "http://ecolikb.org/"
     },
 
     "users": [
