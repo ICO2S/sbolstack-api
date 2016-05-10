@@ -12,6 +12,10 @@
         "ecolikb": "http://ecolikb.org/"
     },
 
+    "otherStacks": [
+        "http://synbiohub.org"
+    ],
+
     "users": [
         {
             "name": "admin",
