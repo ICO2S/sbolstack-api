@@ -1,8 +1,23 @@
-PREFIX sbol2: <http://sbols.org/v2#>
+PREFIX sbol: <http://sbols.org/v2#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ncbi: <http://www.ncbi.nlm.nih.gov#>
 
-DESCRIBE ?$type WHERE {
-    $criteria
-    ?$type a sbol2:$type .
+CONSTRUCT {
+
+  ?$type ?p ?o
+
+} WHERE {
+
+  {
+      SELECT ?$type WHERE {
+          ?$type a sbol:ComponentDefinition .
+          $criteria
+      }
+      $limit
+      $offset
+  }
+  
+  ?$type ?p ?o .
 }
+
+
