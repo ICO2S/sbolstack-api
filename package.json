@@ -1,6 +1,6 @@
 {
   "name": "sbolstack-api",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "morgan": "^1.6.1",
     "mustache": "^2.2.1",
     "node-uuid": "^1.4.7",
-    "openrdf-sesame-js": "^0.2.0",
+    "openrdf-sesame-js": "^0.2.1",
     "pg-escape": "^0.1.0",
     "rdf-ext": "^0.3.0",
     "rdf-parser-rdfxml": "^0.3.1",
