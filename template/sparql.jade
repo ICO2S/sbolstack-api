@@ -1,0 +1,32 @@
+
+extends default.jade
+
+block styles
+    style(type='text/css')
+        | #flint-editor { box-sizing: content-box; } 
+        | #flint-editor * { box-sizing: content-box; line-height: normal; } 
+
+    link(rel='stylesheet',href='/js/FlintSparqlEditor/sparql/lib/codemirror.css')
+    link(rel='stylesheet',href='/js/FlintSparqlEditor/sparql/css/sparqlcolors.css')
+    link(rel='stylesheet',href='/js/FlintSparqlEditor/sparql/css/docs.css')
+
+block scripts
+
+    script(type='text/javascript')
+        | flintConfig = !{JSON.stringify(flintConfig)}
+
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/jquery.browser.min.js')
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/lib/codemirror.js')
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/sparql10querymode_ll1.js')
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/sparql11querymode_ll1.js')
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/sparql11updatemode_ll1.js')
+    script(type='text/javascript',src='/js/sparql-editor.js')
+    script(type='text/javascript',src='/js/FlintSparqlEditor/sparql/flint-editor.js')
+
+
+
+
+block content
+    div#sparql-editor
+
+

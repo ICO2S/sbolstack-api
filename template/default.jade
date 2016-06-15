@@ -1,0 +1,40 @@
+
+html
+head
+    title SBOL Stack
+
+    link(rel='stylesheet',href='/css/bootstrap.min.css')
+    link(rel='stylesheet',href='/css/bootstrap-theme.min.css')
+
+    block styles
+
+    script(src='/js/jquery-2.2.4.min.js')
+    script(src='/js/bootstrap.min.js')
+
+    block scripts
+
+
+body
+
+    div.container
+        div.row.text-center
+            div.col-md-12
+                a(href='http://sbolstack.org')
+                    img(src='http://ico2s.github.io/sbolstack/img/stacklogo.png',width='300')
+
+        br
+
+        div.row
+            div.col-sm-2
+                div.list-group
+                    each item in nav
+                        if currentPage === item.name
+                            a(href=item.href).list-group-item.active #{item.title}
+                        else
+                            a(href=item.href).list-group-item #{item.title}
+    
+            div.col-sm-10
+                block content
+
+
+
