@@ -8,5 +8,5 @@ SELECT ?$type ?name ?description ?displayId ?version WHERE {
     OPTIONAL { ?$type dcterms:title ?name . }
     OPTIONAL { ?$type sbol2:displayId ?displayId . }
     OPTIONAL { ?$type dcterms:description ?description . }
-    OPTIONAL { ?$type sbol:version ?version }
+    OPTIONAL { ?$type sbol2:version ?version }
 }
