@@ -3,7 +3,7 @@
 
     "triplestore": {
         "sparqlEndpoint": "http://localhost:8890/sparql",
-        "graphStoreEndpoint": "http://localhost:8890/sparql-graph-crud-auth",
+        "graphStoreEndpoint": "http://localhost:8890/sparql-graph-crud-auth/",
         "defaultGraph": "http://synbiohub.org",
         "graphPrefix": "http://synbiohub.org/graph/",
         "username": "dba",
