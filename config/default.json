@@ -4,8 +4,8 @@
     "triplestore": {
         "sparqlEndpoint": "http://localhost:8890/sparql",
         "graphStoreEndpoint": "http://localhost:8890/sparql-graph-crud-auth/",
-        "defaultGraph": "http://synbiohub.org",
-        "graphPrefix": "http://synbiohub.org/graph/",
+        "defaultGraph": "http://synbiohub.org/public",
+        "graphPrefix": "http://synbiohub.org/",
         "username": "dba",
         "password": "moomins"
     },
@@ -13,7 +13,7 @@
     "prefixes": {
         "bacillondex": "http://www.bacillondex.org/",
         "synbiohub": "http://synbiohub.org#",
-        "igem": "http://synbiohub.org/igem/",
+        "igem": "http://synbiohub.org/terms/igem/",
         "ecolikb": "http://ecolikb.org/",
         "ncbi": "http://www.ncbi.nlm.nih.gov#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
