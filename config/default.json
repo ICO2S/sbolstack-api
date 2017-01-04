@@ -19,8 +19,9 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "sybio": "http://www.sybio.ncl.ac.uk#", 
         "sbol1": "http://sbols.org/sbol.owl#",
-        "synbiohub": "http://synbiohub.org#",                        
-        "ecolikb": "http://ecolikb.org#"
+        "synbiohub": "http://synbiohub.org#",
+        "ecolikb": "http://ecolikb.org#",
+	"gb": "http://www.ncbi.nlm.nih.gov"
     },
 
     "otherStacks": [
@@ -41,5 +42,5 @@
     ],
 
     "uploadLimit": "150mb",
-    "resolveBatch": 100
+    "resolveBatch": 10
 }
