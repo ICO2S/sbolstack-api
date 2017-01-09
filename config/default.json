@@ -21,7 +21,7 @@
         "sbol1": "http://sbols.org/sbol.owl#",
         "synbiohub": "http://synbiohub.org#",
         "ecolikb": "http://ecolikb.org#",
-	"gb": "http://www.ncbi.nlm.nih.gov"
+	"gb": "http://www.ncbi.nlm.nih.gov/"
     },
 
     "otherStacks": [
